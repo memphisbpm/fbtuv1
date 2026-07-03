@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Florida Business &amp; Technology University — FBTU</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -99,6 +99,10 @@
 <div id="pg-home" class="pg on">
 
 <section class="hero-premium">
+  <video autoplay loop muted playsinline class="hero-video-bg">
+    <source src="Video/Miami-Night.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
   <div class="wrap hero-grid">
     <!-- Left Column: Content -->
     <div class="hero-content fd">
@@ -135,7 +139,7 @@
           <div class="badge-icon">💻</div>
           <div>
             <div class="badge-label">Canvas LMS</div>
-            <div class="badge-sub">Plataforma Harvard & MIT</div>
+            <div class="badge-sub">Plataforma Harvard &amp; MIT</div>
           </div>
         </div>
         <div class="glass-float-badge float-badge-3">
@@ -154,19 +158,19 @@
   <div class="hero-strip">
     <div class="wrap hero-stats-bar">
       <div class="hero-stat">
-        <div class="hs-n">+<span id="c1">0</span></div>
+        <div class="hs-n">+<span id="c1" class="counter-val" data-target="120" data-duration="2800">0</span></div>
         <div style="font-size:11.5px;color:var(--tm);margin-top:4px;line-height:1.4">países donde tu título es válido</div>
       </div>
       <div class="hero-stat">
-        <div class="hs-n">$<span id="c2">0</span></div>
-        <div style="font-size:11.5px;color:var(--tm);margin-top:4px;line-height:1.4">por crédito académico</div>
+        <div class="hs-n"><span id="c2" class="counter-val" data-target="100" data-duration="2800">0</span>%</div>
+        <div style="font-size:11.5px;color:var(--tm);margin-top:4px;line-height:1.4">virtual y en español</div>
       </div>
       <div class="hero-stat">
-        <div class="hs-n"><span id="c3">0</span></div>
+        <div class="hs-n"><span id="c3" class="counter-val" data-target="12" data-duration="2000">0</span></div>
         <div style="font-size:11.5px;color:var(--tm);margin-top:4px;line-height:1.4">programas de pregrado</div>
       </div>
       <div class="hero-stat">
-        <div class="hs-n"><span id="c4">0</span></div>
+        <div class="hs-n"><span id="c4" class="counter-val" data-target="8" data-duration="2000">0</span></div>
         <div style="font-size:11.5px;color:var(--tm);margin-top:4px;line-height:1.4">programas de posgrado</div>
       </div>
     </div>
@@ -207,13 +211,207 @@
     </div>
   </div>
   <div class="pgrid" id="pgrid">
-    <div class="pc pre fd" onclick="go('pre','bba')"><div class="pc-lv">Pregrado — B.S.</div><div class="pc-sc">School of Business &amp; Management</div><div class="pc-nm">Business Administration</div><div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">4 especializaciones</span></div><div class="pc-es"><div class="pc-e">General Management</div><div class="pc-e">Strategic Marketing &amp; Intl. Business</div><div class="pc-e">Finance</div><div class="pc-e">Human Resources</div></div><span class="pc-a">Ver programa →</span></div>
-    <div class="pc pre fd d1" onclick="go('pre','mkt')"><div class="pc-lv">Pregrado — B.S.</div><div class="pc-sc">School of Marketing &amp; Digital Commerce</div><div class="pc-nm">Marketing</div><div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">4 especializaciones</span></div><div class="pc-es"><div class="pc-e">Digital Marketing &amp; E-Commerce</div><div class="pc-e">Strategic Marketing &amp; Intl. Business</div><div class="pc-e">Human Resources Mgmt.</div><div class="pc-e">General Management</div></div><span class="pc-a">Ver programa →</span></div>
-    <div class="pc pre fd d2" onclick="go('pre','it')"><div class="pc-lv">Pregrado — B.S.</div><div class="pc-sc">School of Technology</div><div class="pc-nm">Information Technology</div><div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">2 especializaciones</span></div><div class="pc-es"><div class="pc-e">System Engineering</div><div class="pc-e">Software System Development</div></div><span class="pc-a">Ver programa →</span></div>
-    <div class="pc pre fd d3" onclick="go('pre','acct')"><div class="pc-lv">Pregrado — B.S.</div><div class="pc-sc">School of Finance &amp; Accounting</div><div class="pc-nm">Accounting &amp; Finance</div><div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">2 especializaciones</span></div><div class="pc-es"><div class="pc-e">Banking &amp; Finance</div><div class="pc-e">Finance Management</div></div><span class="pc-a">Ver programa →</span></div>
-    <div class="pc po fd" onclick="go('pos','mba')"><div class="pc-lv">Posgrado — MBA</div><div class="pc-sc">MBA Programs</div><div class="pc-nm">Master of Business Administration</div><div class="pc-sp"><span class="pc-s">36 cr.</span><span class="pc-s">4 especializaciones</span></div><div class="pc-es"><div class="pc-e">General Management &amp; Innovation</div><div class="pc-e">Digital Marketing Management</div><div class="pc-e">Human Resources Management</div><div class="pc-e">Financial Management</div></div><span class="pc-a">Ver programa →</span></div>
-    <div class="pc po fd d1" onclick="go('pos','mktm')"><div class="pc-lv">Posgrado — Master</div><div class="pc-sc">School of Marketing</div><div class="pc-nm">Master of Marketing</div><div class="pc-sp"><span class="pc-s">36 cr.</span><span class="pc-s">2 especializaciones</span></div><div class="pc-es"><div class="pc-e">Strategic Marketing Management</div><div class="pc-e">Digital Marketing Management</div></div><span class="pc-a">Ver programa →</span></div>
-    <div class="pc po fd d2" onclick="go('pos','edm')"><div class="pc-lv">Posgrado — Master</div><div class="pc-sc">School of Education</div><div class="pc-nm">Master of Higher Education</div><div class="pc-sp"><span class="pc-s">36 cr.</span><span class="pc-s">2 especializaciones</span></div><div class="pc-es"><div class="pc-e">Online Education &amp; E-Learning Tech.</div><div class="pc-e">General Management &amp; Innovation</div></div><span class="pc-a">Ver programa →</span></div>
+    <!-- Business Administration -->
+    <div class="pc-card-container pre fd" onclick="go('pre','bba')">
+      <div class="pc-card-inner">
+        <div class="pc-card-front pc pre">
+          <div>
+            <div class="pc-lv">Pregrado — B.S.</div>
+            <div class="pc-sc">School of Business &amp; Management</div>
+            <div class="pc-nm">Business Administration</div>
+            <div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">4 especializaciones</span></div>
+          </div>
+          <div class="pc-es">
+            <div class="pc-e">General Management</div>
+            <div class="pc-e">Strategic Marketing &amp; Intl. Business</div>
+            <div class="pc-e">Finance</div>
+            <div class="pc-e">Human Resources</div>
+          </div>
+          <span class="pc-a">Ver programa →</span>
+        </div>
+        <div class="pc-card-back" style="background-image: url('img/fbtu-business-administration-profile-768x1024.jpg')">
+          <div class="pc-card-back-overlay"></div>
+          <div class="pc-card-back-content">
+            <div class="pc-lv" style="color: #fff; opacity: 0.8; margin-bottom: 2px;">Pregrado</div>
+            <h3 class="pc-card-back-title">Business Administration</h3>
+            <p class="pc-card-back-desc">Lidera organizaciones globales con un enfoque integral en gestión estratégica, innovación empresarial y emprendimiento.</p>
+            <span class="pc-card-back-link">Ver programa →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marketing -->
+    <div class="pc-card-container pre fd d1" onclick="go('pre','mkt')">
+      <div class="pc-card-inner">
+        <div class="pc-card-front pc pre">
+          <div>
+            <div class="pc-lv">Pregrado — B.S.</div>
+            <div class="pc-sc">School of Marketing &amp; Digital Commerce</div>
+            <div class="pc-nm">Marketing</div>
+            <div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">4 especializaciones</span></div>
+          </div>
+          <div class="pc-es">
+            <div class="pc-e">Digital Marketing &amp; E-Commerce</div>
+            <div class="pc-e">Strategic Marketing &amp; Intl. Business</div>
+            <div class="pc-e">Human Resources Mgmt.</div>
+            <div class="pc-e">General Management</div>
+          </div>
+          <span class="pc-a">Ver programa →</span>
+        </div>
+        <div class="pc-card-back" style="background-image: url('img/fbtu-marketing-profile-768x1024.jpg')">
+          <div class="pc-card-back-overlay"></div>
+          <div class="pc-card-back-content">
+            <div class="pc-lv" style="color: #fff; opacity: 0.8; margin-bottom: 2px;">Pregrado</div>
+            <h3 class="pc-card-back-title">Marketing</h3>
+            <p class="pc-card-back-desc">Domina el ecosistema digital, la analítica web y las estrategias globales para impulsar marcas en mercados competitivos.</p>
+            <span class="pc-card-back-link">Ver programa →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Information Technology -->
+    <div class="pc-card-container pre fd d2" onclick="go('pre','it')">
+      <div class="pc-card-inner">
+        <div class="pc-card-front pc pre">
+          <div>
+            <div class="pc-lv">Pregrado — B.S.</div>
+            <div class="pc-sc">School of Technology</div>
+            <div class="pc-nm">Information Technology</div>
+            <div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">2 especializaciones</span></div>
+          </div>
+          <div class="pc-es">
+            <div class="pc-e">System Engineering</div>
+            <div class="pc-e">Software System Development</div>
+          </div>
+          <span class="pc-a">Ver programa →</span>
+        </div>
+        <div class="pc-card-back" style="background-image: url('img/fbtu-information-technology-profile-768x1024.jpg')">
+          <div class="pc-card-back-overlay"></div>
+          <div class="pc-card-back-content">
+            <div class="pc-lv" style="color: #fff; opacity: 0.8; margin-bottom: 2px;">Pregrado</div>
+            <h3 class="pc-card-back-title">Information Technology</h3>
+            <p class="pc-card-back-desc">Conviértete en un líder tecnológico capaz de diseñar soluciones innovadoras y guiar la transformación digital corporativa.</p>
+            <span class="pc-card-back-link">Ver programa →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accounting & Finance -->
+    <div class="pc-card-container pre fd d3" onclick="go('pre','acct')">
+      <div class="pc-card-inner">
+        <div class="pc-card-front pc pre">
+          <div>
+            <div class="pc-lv">Pregrado — B.S.</div>
+            <div class="pc-sc">School of Finance &amp; Accounting</div>
+            <div class="pc-nm">Accounting &amp; Finance</div>
+            <div class="pc-sp"><span class="pc-s">120 cr.</span><span class="pc-s">2 especializaciones</span></div>
+          </div>
+          <div class="pc-es">
+            <div class="pc-e">Banking &amp; Finance</div>
+            <div class="pc-e">Finance Management</div>
+          </div>
+          <span class="pc-a">Ver programa →</span>
+        </div>
+        <div class="pc-card-back" style="background-image: url('img/fbtu-accounting-finance-profile-768x1024.jpg')">
+          <div class="pc-card-back-overlay"></div>
+          <div class="pc-card-back-content">
+            <div class="pc-lv" style="color: #fff; opacity: 0.8; margin-bottom: 2px;">Pregrado</div>
+            <h3 class="pc-card-back-title">Accounting &amp; Finance</h3>
+            <p class="pc-card-back-desc">Especialízate en toma de decisiones financieras, gestión de riesgos, auditoría y banca con proyección internacional.</p>
+            <span class="pc-card-back-link">Ver programa →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MBA -->
+    <div class="pc-card-container po fd" onclick="go('pos','mba')">
+      <div class="pc-card-inner">
+        <div class="pc-card-front pc po">
+          <div>
+            <div class="pc-lv">Posgrado — MBA</div>
+            <div class="pc-sc">MBA Programs</div>
+            <div class="pc-nm">Master of Business Administration</div>
+            <div class="pc-sp"><span class="pc-s">36 cr.</span><span class="pc-s">4 especializaciones</span></div>
+          </div>
+          <div class="pc-es">
+            <div class="pc-e">General Management &amp; Innovation</div>
+            <div class="pc-e">Digital Marketing Management</div>
+            <div class="pc-e">Human Resources Management</div>
+            <div class="pc-e">Financial Management</div>
+          </div>
+          <span class="pc-a">Ver programa →</span>
+        </div>
+        <div class="pc-card-back" style="background-image: url('img/fbtu-mba-profile-768x1024.jpg')">
+          <div class="pc-card-back-overlay header-red"></div>
+          <div class="pc-card-back-content">
+            <div class="pc-lv" style="color: var(--red); font-weight: 700; margin-bottom: 2px;">Posgrado</div>
+            <h3 class="pc-card-back-title">MBA - Business Admin.</h3>
+            <p class="pc-card-back-desc">El programa definitivo para acelerar tu desarrollo directivo y expandir tu red de contactos en el ámbito ejecutivo global.</p>
+            <span class="pc-card-back-link">Ver programa →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Master of Marketing -->
+    <div class="pc-card-container po fd d1" onclick="go('pos','mktm')">
+      <div class="pc-card-inner">
+        <div class="pc-card-front pc po">
+          <div>
+            <div class="pc-lv">Posgrado — Master</div>
+            <div class="pc-sc">School of Marketing</div>
+            <div class="pc-nm">Master of Marketing</div>
+            <div class="pc-sp"><span class="pc-s">36 cr.</span><span class="pc-s">2 especializaciones</span></div>
+          </div>
+          <div class="pc-es">
+            <div class="pc-e">Strategic Marketing Management</div>
+            <div class="pc-e">Digital Marketing Management</div>
+          </div>
+          <span class="pc-a">Ver programa →</span>
+        </div>
+        <div class="pc-card-back" style="background-image: url('img/fbtu-master-marketing-profile-768x1024.jpg')">
+          <div class="pc-card-back-overlay header-red"></div>
+          <div class="pc-card-back-content">
+            <div class="pc-lv" style="color: var(--red); font-weight: 700; margin-bottom: 2px;">Posgrado</div>
+            <h3 class="pc-card-back-title">Master of Marketing</h3>
+            <p class="pc-card-back-desc">Profundiza en inteligencia de mercados, comportamiento del consumidor y dirección estratégica de campañas comerciales.</p>
+            <span class="pc-card-back-link">Ver programa →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Master of Higher Education -->
+    <div class="pc-card-container po fd d2" onclick="go('pos','edm')">
+      <div class="pc-card-inner">
+        <div class="pc-card-front pc po">
+          <div>
+            <div class="pc-lv">Posgrado — Master</div>
+            <div class="pc-sc">School of Education</div>
+            <div class="pc-nm">Master of Higher Education</div>
+            <div class="pc-sp"><span class="pc-s">36 cr.</span><span class="pc-s">2 especializaciones</span></div>
+          </div>
+          <div class="pc-es">
+            <div class="pc-e">Online Education &amp; E-Learning Tech.</div>
+            <div class="pc-e">General Management &amp; Innovation</div>
+          </div>
+          <span class="pc-a">Ver programa →</span>
+        </div>
+        <div class="pc-card-back" style="background-image: url('img/fbtu-master-higher-education-profile-768x1024.jpg')">
+          <div class="pc-card-back-overlay header-red"></div>
+          <div class="pc-card-back-content">
+            <div class="pc-lv" style="color: var(--red); font-weight: 700; margin-bottom: 2px;">Posgrado</div>
+            <h3 class="pc-card-back-title">Master of Higher Education</h3>
+            <p class="pc-card-back-desc">Especialízate en metodologías de e-learning, diseño curricular online y liderazgo de instituciones educativas modernas.</p>
+            <span class="pc-card-back-link">Ver programa →</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 </section>
@@ -225,44 +423,172 @@
   <h2 class="ttl w fd">Your degree. <em>Their market.</em></h2>
   <p class="sub w fd d1">Un título emitido en Florida te abre las puertas del mercado laboral más grande y mejor remunerado del mundo.</p>
   <div class="why-sr">
-    <div class="wst"><div class="wst-n">6%</div><div class="wst-l">Crecimiento en gestión empresarial EE.UU. 2034 (BLS)</div></div>
-    <div class="wst"><div class="wst-n r">+1M</div><div class="wst-l">Vacantes anuales en dirección en EE.UU.</div></div>
-    <div class="wst"><div class="wst-n">75%</div><div class="wst-l">Mayor empleo formal para profesionales universitarios LATAM (OIT)</div></div>
-    <div class="wst"><div class="wst-n r">+120</div><div class="wst-l">Países donde tu título puede apostillarse legalmente</div></div>
+    <div class="wst">
+      <div class="wst-n"><span class="counter-val" data-target="6" data-duration="2000">0</span>%</div>
+      <div class="wst-l">Crecimiento en gestión empresarial EE.UU. 2034 (BLS)</div>
+    </div>
+    <div class="wst">
+      <div class="wst-n r">+<span class="counter-val" data-target="1" data-duration="1500">0</span>M</div>
+      <div class="wst-l">Vacantes anuales en dirección en EE.UU.</div>
+    </div>
+    <div class="wst">
+      <div class="wst-n"><span class="counter-val" data-target="75" data-duration="2800">0</span>%</div>
+      <div class="wst-l">Mayor empleo formal para profesionales universitarios LATAM (OIT)</div>
+    </div>
+    <div class="wst">
+      <div class="wst-n r">+<span class="counter-val" data-target="120" data-duration="2800">0</span></div>
+      <div class="wst-l">Países donde tu título puede apostillarse legalmente</div>
+    </div>
   </div>
   <div class="why-g">
-    <div class="wi fd"><div class="wi-n">01</div><div class="wi-t">Título con validez internacional</div><div class="wi-d">Apostillable conforme al Convenio de La Haya. Validez legal reconocida en más de 120 países. Un solo título. Validez mundial.</div></div>
-    <div class="wi fd d1"><div class="wi-n">02</div><div class="wi-t">El idioma que hablas</div><div class="wi-d">Porque dominar los negocios no requiere cambiar de idioma. 100% en español. Sin TOEFL ni GRE.</div></div>
-    <div class="wi fd d2"><div class="wi-n">03</div><div class="wi-t">La plataforma de la élite</div><div class="wi-d">Canvas LMS. La misma plataforma que usan Harvard, Yale, Columbia y MIT. Más de 6,000 universidades en el mundo.</div></div>
-    <div class="wi fd d3"><div class="wi-n">04</div><div class="wi-t">Certificaciones del mercado</div><div class="wi-d">Google, LinkedIn, Meta Blueprint, Microsoft Power BI. Las credenciales que los reclutadores buscan en tu perfil.</div></div>
-    <div class="wi fd"><div class="wi-n">05</div><div class="wi-t">Acceso desde cualquier país</div><div class="wi-d">Bolivia, Perú, Colombia, Argentina, México, Honduras, El Salvador. Solo necesitas internet y determinación.</div></div>
-    <div class="wi fd d1"><div class="wi-n">06</div><div class="wi-t">Inversión real a precio justo</div><div class="wi-d">$30/crédito pregrado · $50/crédito posgrado. Becas hasta el 75%. Plan de pagos sin intereses.</div></div>
+    <!-- Characteristic 01 -->
+    <div class="wi fd wi-slide-card">
+      <div class="wi-content">
+        <div class="wi-n">01</div>
+        <div class="wi-t">Título con validez internacional</div>
+        <div class="wi-d">Apostillable conforme al Convenio de La Haya. Validez legal reconocida en más de 120 países. Un solo título. Validez mundial.</div>
+      </div>
+      <div class="wi-cover cover-right" style="background-image: url('img/01-titulo-validez-internacional-768x512.jpg')">
+        <div class="wi-cover-overlay"></div>
+        <div class="wi-cover-text">
+          <div class="wi-cover-number">01</div>
+          <div class="wi-cover-title">Título con validez internacional</div>
+        </div>
+      </div>
+    </div>
+    <!-- Characteristic 02 -->
+    <div class="wi fd d1 wi-slide-card">
+      <div class="wi-content">
+        <div class="wi-n">02</div>
+        <div class="wi-t">El idioma que hablas</div>
+        <div class="wi-d">Porque dominar los negocios no requiere cambiar de idioma. 100% en español. Sin TOEFL ni GRE.</div>
+      </div>
+      <div class="wi-cover cover-down" style="background-image: url('img/02-idioma-espanol-768x512.jpg')">
+        <div class="wi-cover-overlay"></div>
+        <div class="wi-cover-text">
+          <div class="wi-cover-number">02</div>
+          <div class="wi-cover-title">El idioma que hablas</div>
+        </div>
+      </div>
+    </div>
+    <!-- Characteristic 03 -->
+    <div class="wi fd d2 wi-slide-card">
+      <div class="wi-content">
+        <div class="wi-n">03</div>
+        <div class="wi-t">La plataforma de la élite</div>
+        <div class="wi-d">Canvas LMS. La misma plataforma que usan Harvard, Yale, Columbia y MIT. Más de 6,000 universidades en el mundo.</div>
+      </div>
+      <div class="wi-cover cover-left" style="background-image: url('img/03-plataforma-elite-768x512.jpg')">
+        <div class="wi-cover-overlay"></div>
+        <div class="wi-cover-text">
+          <div class="wi-cover-number">03</div>
+          <div class="wi-cover-title">La plataforma de la élite</div>
+        </div>
+      </div>
+    </div>
+    <!-- Characteristic 04 -->
+    <div class="wi fd d3 wi-slide-card">
+      <div class="wi-content">
+        <div class="wi-n">04</div>
+        <div class="wi-t">Certificaciones del mercado</div>
+        <div class="wi-d">Google, LinkedIn, Meta Blueprint, Microsoft Power BI. Las credenciales que los reclutadores buscan en tu perfil.</div>
+      </div>
+      <div class="wi-cover cover-right" style="background-image: url('img/04-certificaciones-mercado-768x512.jpg')">
+        <div class="wi-cover-overlay"></div>
+        <div class="wi-cover-text">
+          <div class="wi-cover-number">04</div>
+          <div class="wi-cover-title">Certificaciones del mercado</div>
+        </div>
+      </div>
+    </div>
+    <!-- Characteristic 05 -->
+    <div class="wi fd wi-slide-card">
+      <div class="wi-content">
+        <div class="wi-n">05</div>
+        <div class="wi-t">Acceso desde cualquier país</div>
+        <div class="wi-d">Bolivia, Perú, Colombia, Argentina, México, Honduras, El Salvador. Solo necesitas internet y determinación.</div>
+      </div>
+      <div class="wi-cover cover-up" style="background-image: url('img/05-acceso-cualquier-pais-768x512.jpg')">
+        <div class="wi-cover-overlay"></div>
+        <div class="wi-cover-text">
+          <div class="wi-cover-number">05</div>
+          <div class="wi-cover-title">Acceso desde cualquier país</div>
+        </div>
+      </div>
+    </div>
+    <!-- Characteristic 06 -->
+    <div class="wi fd d1 wi-slide-card">
+      <div class="wi-content">
+        <div class="wi-n">06</div>
+        <div class="wi-t">Inversión real a precio justo</div>
+        <div class="wi-d">$30/crédito pregrado · $50/crédito posgrado. Becas hasta el 75%. Plan de pagos sin intereses.</div>
+      </div>
+      <div class="wi-cover cover-left" style="background-image: url('img/06-inversion-precio-justo-768x512.jpg')">
+        <div class="wi-cover-overlay"></div>
+        <div class="wi-cover-text">
+          <div class="wi-cover-number">06</div>
+          <div class="wi-cover-title">Inversión real a precio justo</div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="why-tl">Your future. <span>Your price.</span></div>
 </div>
 </section>
 
 <!-- METHODOLOGY -->
-<section class="sec">
-<div class="wrap">
-  <div class="lbl fd">Metodología</div>
-  <h2 class="ttl fd d1">Un entorno digital <em>de clase mundial</em></h2>
-  <p class="sub fd d2">Aprende con los mejores estándares académicos americanos, desde cualquier lugar de Latinoamérica.</p>
-  <div class="ml">
-    <div class="mit">
-      <div class="mi fd"><div class="mi-n">01</div><div><div class="mi-t">Aprendizaje aplicado</div><div class="mi-d">Casos reales, proyectos y simulaciones desde el primer día. Evaluaciones que replican situaciones empresariales reales.</div></div></div>
-      <div class="mi fd d1"><div class="mi-n">02</div><div><div class="mi-t">Docentes internacionales</div><div class="mi-d">Formación de posgrado + experiencia ejecutiva real. Office hours individuales. Feedback en máximo 72 horas. Ratio 30:1.</div></div></div>
-      <div class="mi fd d2"><div class="mi-n">03</div><div><div class="mi-t">Recursos 24/7</div><div class="mi-d">Canvas LMS. Biblioteca Aquinas Online con +200 fuentes académicas. Foros de debate. Comunidad activa de toda Latinoamérica.</div></div></div>
-      <div class="mi fd d3"><div class="mi-n">04</div><div><div class="mi-t">Asesor personalizado</div><div class="mi-d">Tutor asignado desde el primer día. Acompañamiento académico y orientación profesional durante toda la carrera.</div></div></div>
-    </div>
-    <div class="mpanel fd d2">
-      <div class="cvrow"><div class="cvdot">C</div><div><div class="cv-m">Canvas LMS</div><div class="cv-s">La plataforma de la educación de élite</div></div></div>
-      <p style="font-size:13px;color:rgba(255,255,255,.48);line-height:1.65;margin-bottom:4px">Más de <strong style="color:rgba(255,255,255,.78)">6,000 universidades</strong> en el mundo confían en Canvas.</p>
-      <div class="unig"><div class="unib">Harvard</div><div class="unib">Yale</div><div class="unib">MIT</div><div class="unib">Columbia</div></div>
-      <div class="aqb"><div class="aq-l">Biblioteca Digital</div><div class="aq-c"><div class="aq-n">Aquinas Online Library</div><div class="aq-d">+200 fuentes · Journals · eBooks · Bases de datos · 24/7</div></div></div>
+<section class="sec methodology-section">
+  <!-- Dynamic Background Slideshow -->
+  <div class="methodology-bg-slides">
+    <div class="methodology-slide active" style="background-image: url('img/methodology_1.png')"></div>
+    <div class="methodology-slide" style="background-image: url('img/methodology_2.png')"></div>
+    <div class="methodology-slide" style="background-image: url('img/methodology_3.png')"></div>
+    <div class="methodology-slide" style="background-image: url('img/methodology_4.png')"></div>
+  </div>
+  <div class="methodology-bg-overlay"></div>
+  <div class="wrap">
+    <div class="lbl fd">Metodología</div>
+    <h2 class="ttl fd d1">Un entorno digital <em>de clase mundial</em></h2>
+    <p class="sub fd d2">Aprende con los mejores estándares académicos americanos, desde cualquier lugar de Latinoamérica.</p>
+    <div class="ml">
+      <div class="mit">
+        <div class="mi fd methodology-item" data-index="0">
+          <div class="mi-n">01</div>
+          <div>
+            <div class="mi-t">Aprendizaje aplicado</div>
+            <div class="mi-d">Casos reales, proyectos y simulaciones desde el primer día. Evaluaciones que replican situaciones empresariales reales.</div>
+          </div>
+        </div>
+        <div class="mi fd d1 methodology-item" data-index="1">
+          <div class="mi-n">02</div>
+          <div>
+            <div class="mi-t">Docentes internacionales</div>
+            <div class="mi-d">Formación de posgrado + experiencia ejecutiva real. Office hours individuales. Feedback en máximo 72 horas. Ratio 30:1.</div>
+          </div>
+        </div>
+        <div class="mi fd d2 methodology-item" data-index="2">
+          <div class="mi-n">03</div>
+          <div>
+            <div class="mi-t">Recursos 24/7</div>
+            <div class="mi-d">Canvas LMS. Biblioteca Aquinas Online con +200 fuentes académicas. Foros de debate. Comunidad activa de toda Latinoamérica.</div>
+          </div>
+        </div>
+        <div class="mi fd d3 methodology-item" data-index="3">
+          <div class="mi-n">04</div>
+          <div>
+            <div class="mi-t">Asesor personalizado</div>
+            <div class="mi-d">Tutor asignado desde el primer día. Acompañamiento académico y orientación profesional durante toda la carrera.</div>
+          </div>
+        </div>
+      </div>
+      <div class="mpanel fd d2">
+        <div class="cvrow"><div class="cvdot">C</div><div><div class="cv-m">Canvas LMS</div><div class="cv-s">La plataforma de la educación de élite</div></div></div>
+        <p style="font-size:13px;color:rgba(255,255,255,.48);line-height:1.65;margin-bottom:4px">Más de <strong style="color:rgba(255,255,255,.78)">6,000 universidades</strong> en el mundo confían en Canvas.</p>
+        <div class="unig"><div class="unib">Harvard</div><div class="unib">Yale</div><div class="unib">MIT</div><div class="unib">Columbia</div></div>
+        <div class="aqb"><div class="aq-l">Biblioteca Digital</div><div class="aq-c"><div class="aq-n">Aquinas Online Library</div><div class="aq-d">+200 fuentes · Journals · eBooks · Bases de datos · 24/7</div></div></div>
+      </div>
     </div>
   </div>
-</div>
 </section>
 
 <!-- CERTIFICATIONS -->
@@ -352,11 +678,6 @@
       </div>
       <button class="btn lg b-navy" onclick="go('adm')" style="width:100%;justify-content:center">Solicitar admisión →</button>
     </div>
-  </div>
-  <div class="pr-ex fd">
-    <div><div class="pe-t">Becas disponibles</div><div class="pe-v">Hasta 75%</div><div class="pe-n">descuento · hasta 20 por período</div></div>
-    <div><div class="pe-t">Plan de pagos</div><div class="pe-v">Sin intereses</div><div class="pe-n">2 cuotas mensuales por período</div></div>
-    <div><div class="pe-t">Diploma oficial</div><div class="pe-v">$250</div><div class="pe-n">emitido en Florida · apostillable</div></div>
   </div>
 </div>
 </section>
@@ -477,10 +798,61 @@
     <div class="lbl">Filosofía Académica</div>
     <h2 class="ttl">Los 4 principios que <em>nos definen</em></h2>
     <div class="prg">
-      <div class="prc2"><img src="img/1.svg" class="pn-svg" alt="01"><div class="pt">Excelencia bajo estándares estadounidenses</div><div class="pd">FBTU desarrolla sus programas dentro del marco académico del sistema de educación superior americano, garantizando excelencia académica.</div></div>
-      <div class="prc2"><img src="img/2.svg" class="pn-svg" alt="02"><div class="pt">Educación aplicada y orientada a la ejecución</div><div class="pd">Los estudiantes desarrollan competencias, conocimientos y habilidades mediante la gestión de proyectos y experiencias aplicadas.</div></div>
-      <div class="prc2"><img src="img/3.svg" class="pn-svg" alt="03"><div class="pt">Tecnología educativa avanzada — Canvas LMS</div><div class="pd">FBTU integra plataformas LMS de nivel internacional con estructura académica bimestral orientada a progresión continua, accesible desde cualquier dispositivo.</div></div>
-      <div class="prc2"><img src="img/4.svg" class="pn-svg" alt="04"><div class="pt">Título americano con proyección internacional</div><div class="pd">Los programas otorgan títulos universitarios oficiales de EE.UU., apostillables conforme al Convenio de La Haya y reconocidos en más de 120 países.</div></div>
+      <!-- Principio 1: Excelencia -->
+      <div class="prc2">
+        <div class="prc2-icon-box">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm0 18c-3.75-1.07-6.5-5.06-6.5-9.15V8.34l6.5-3.61 6.5 3.61v2.51c0 4.09-2.75 8.08-6.5 9.15z"/>
+            <path d="M12 7.5L7.5 10l4.5 2.5 4.5-2.5L12 7.5zm0 5.8c-.3 0-.5-.1-.7-.3l-2.3-1.3v1.8c0 .5.4.9.9.9h4.2c.5 0 .9-.4.9-.9v-1.8l-2.3 1.3c-.2.2-.4.3-.7.3z"/>
+          </svg>
+        </div>
+        <div class="prc2-content">
+          <div class="pt">Excelencia bajo estándares estadounidenses</div>
+          <div class="pd">FBTU desarrolla sus programas dentro del marco académico del sistema de educación superior americano, garantizando excelencia académica.</div>
+        </div>
+      </div>
+
+      <!-- Principio 2: Educación Aplicada -->
+      <div class="prc2">
+        <div class="prc2-icon-box">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.4 13c0-.3.1-.6.1-.9s0-.6-.1-.9l2.1-1.7c.2-.2.2-.5 0-.7l-2-3.5c-.1-.2-.4-.3-.6-.2l-2.5 1c-.5-.4-1.1-.7-1.7-.9l-.4-2.6c0-.2-.3-.4-.5-.4h-4c-.3 0-.5.2-.5.4l-.4 2.6c-.6.2-1.2.5-1.7.9l-2.5-1c-.2-.1-.5 0-.6.2l-2 3.5c-.1.2-.1.5.1.7l2.1 1.7c-.1.3-.1.6-.1.9s0 .6.1.9l-2.1 1.7c-.2.2-.2.5 0 .7l2 3.5c.1.2.4.3.6.2l2.5-1c.5.4 1.1.7 1.7.9l.4 2.6c0 .2.3.4.5.4h4c.3 0 .5-.2.5-.4l.4-2.6c.6-.2 1.2-.5 1.7-.9l2.5 1c.2.1.5 0 .6-.2l2-3.5c.1-.2.1-.5-.1-.7l-2.1-1.7zm-7.4 2.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z"/>
+            <path d="M11 13.5l-1.5-1.5-1 1 2.5 2.5 4.5-4.5-1-1z"/>
+          </svg>
+        </div>
+        <div class="prc2-content">
+          <div class="pt">Educación aplicada y orientada a la ejecución</div>
+          <div class="pd">Los estudiantes desarrollan competencias, conocimientos y habilidades mediante la gestión de proyectos y experiencias aplicadas.</div>
+        </div>
+      </div>
+
+      <!-- Principio 3: Tecnología avanzada Canvas -->
+      <div class="prc2">
+        <div class="prc2-icon-box">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+            <path d="M12 8.5L8 11l4 2.5 4-2.5-4-2.5zm0 5.1l-2.5-1.5v1.2l2.5 1.5 2.5-1.5v-1.2l-2.5 1.5z"/>
+          </svg>
+        </div>
+        <div class="prc2-content">
+          <div class="pt">Tecnología educativa avanzada — Canvas LMS</div>
+          <div class="pd">FBTU integra plataformas LMS de nivel internacional con estructura académica bimestral orientada a progresión continua, accesible desde cualquier dispositivo.</div>
+        </div>
+      </div>
+
+      <!-- Principio 4: Título americano -->
+      <div class="prc2">
+        <div class="prc2-icon-box">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.53c-.26-.81-1-1.4-1.9-1.4h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            <path d="M18 15l-1.5-1.5L15 15l.5-2.5-2-1.5h2.5L17 9l1 2h2.5l-2 1.5.5 2.5z"/>
+          </svg>
+        </div>
+        <div class="prc2-content">
+          <div class="pt">Título americano con proyección internacional</div>
+          <div class="pd">Los programas otorgan títulos universitarios oficiales de EE.UU., apostillables conforme al Convenio de La Haya y reconocidos en más de 120 países.</div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -550,7 +922,7 @@
       <div class="pre-bullets">
         <div class="pre-bullet"><span>✓</span> 100% en español, sin exámenes TOEFL ni GRE</div>
         <div class="pre-bullet"><span>✓</span> Título oficial de EE.UU. apostillable por el Convenio de La Haya</div>
-        <div class="pre-bullet"><span>✓</span> Clases asincrónicas 24/7 en la plataforma líder Canvas LMS</div>
+        <div class="pre-bullet"><span>✓</span> Clases sincrónicas (en vivo) con docentes internacionales</div>
       </div>
     </div>
     <div class="pre-intro-visual fd d1">
@@ -562,34 +934,34 @@
 
   <!-- datos clave -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px">
-    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">120</div><div style="font-size:13px;color:var(--tm);margin-top:5px">créditos académicos</div></div>
-    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">12</div><div style="font-size:13px;color:var(--tm);margin-top:5px">programas de pregrado</div></div>
-    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">4</div><div style="font-size:13px;color:var(--tm);margin-top:5px">escuelas académicas</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1"><span class="counter-val" data-target="120" data-duration="2800">0</span></div><div style="font-size:13px;color:var(--tm);margin-top:5px">créditos académicos</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1"><span class="counter-val" data-target="12" data-duration="2000">0</span></div><div style="font-size:13px;color:var(--tm);margin-top:5px">programas de pregrado</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1"><span class="counter-val" data-target="4" data-duration="2000">0</span></div><div style="font-size:13px;color:var(--tm);margin-top:5px">escuelas académicas</div></div>
   </div>
   <!-- estructura -->
   <div style="background:var(--off);border:1px solid var(--bd);border-radius:var(--r);padding:22px;margin-bottom:44px">
     <div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:var(--navy);margin-bottom:10px">Estructura de todos los programas de pregrado</div>
     <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
-      <div style="flex:1;min-width:160px;background:var(--navy);color:#fff;border-radius:4px;padding:14px;text-align:center"><div style="font-family:var(--H);font-size:22px;font-weight:900">30 cr.</div><div style="font-size:12px;opacity:.72;margin-top:3px">Educación General</div></div>
+      <div style="flex:1;min-width:160px;background:var(--navy);color:#fff;border-radius:4px;padding:14px;text-align:center"><div style="font-family:var(--H);font-size:22px;font-weight:900"><span class="counter-val" data-target="30" data-duration="2500">0</span> cr.</div><div style="font-size:12px;opacity:.72;margin-top:3px">Educación General</div></div>
       <div style="font-size:22px;color:var(--tm)">+</div>
-      <div style="flex:1;min-width:160px;background:var(--navy3);color:#fff;border-radius:4px;padding:14px;text-align:center"><div style="font-family:var(--H);font-size:22px;font-weight:900">60 cr.</div><div style="font-size:12px;opacity:.72;margin-top:3px">Núcleo de la Carrera</div></div>
+      <div style="flex:1;min-width:160px;background:var(--navy3);color:#fff;border-radius:4px;padding:14px;text-align:center"><div style="font-family:var(--H);font-size:22px;font-weight:900"><span class="counter-val" data-target="72" data-duration="2800">0</span> cr.</div><div style="font-size:12px;opacity:.72;margin-top:3px">Núcleo de la Carrera</div></div>
       <div style="font-size:22px;color:var(--tm)">+</div>
-      <div style="flex:1;min-width:160px;background:var(--red);color:#fff;border-radius:4px;padding:14px;text-align:center"><div style="font-family:var(--H);font-size:22px;font-weight:900">30 cr.</div><div style="font-size:12px;opacity:.72;margin-top:3px">Especialización</div></div>
+      <div style="flex:1;min-width:160px;background:var(--red);color:#fff;border-radius:4px;padding:14px;text-align:center"><div style="font-family:var(--H);font-size:22px;font-weight:900"><span class="counter-val" data-target="18" data-duration="2000">0</span> cr.</div><div style="font-size:12px;opacity:.72;margin-top:3px">Especialización</div></div>
     </div>
   </div>
 
   <div class="ppg" id="ppg">
 
-    <div class="ppcard" id="bba">
-      <div class="pptop"><div class="ppbg">School of Business &amp; Management · Pregrado</div><div class="ppti">B.S. in Business Administration</div><div class="ppcc">120 créditos · Lic. en Administración de Empresas</div></div>
+        <div class="ppcard" id="bba">
+      <div class="pptop"><div class="ppbg">School of Business & Management · Pregrado</div><div class="ppti">B.S. in Business Administration</div><div class="ppcc">120 créditos · Licenciatura en Administración de Empresas</div></div>
       <div class="ppbd">
         <p class="ppds">La carrera de negocios más demandada del mundo. Desarrolla pensamiento estratégico, liderazgo y capacidad de ejecución para dirigir organizaciones y generar valor en entornos globales.</p>
         <div class="ppet">4 especializaciones disponibles</div>
         <div class="ppe">
-          <div class="ppe-i">General Management — Dirección de Empresas</div>
-          <div class="ppe-i">Strategic Marketing &amp; International Business</div>
-          <div class="ppe-i">Finance — Dirección Financiera</div>
-          <div class="ppe-i">Human Resources — Dirección de RRHH</div>
+          <div class="ppe-i">Dirección de Empresas</div>
+          <div class="ppe-i">Marketing Estratégico y Negocios Internacionales</div>
+          <div class="ppe-i">Dirección Financiera</div>
+          <div class="ppe-i">Dirección de Recursos Humanos</div>
         </div>
         <div class="acc">
           <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Educación General (30 cr.) <span class="ac-a">▼</span></div>
@@ -613,7 +985,7 @@
               <div class="ci2"><span class="cc2">ACG201</span><span>Contabilidad de Costos (Cost Accounting)</span></div>
               <div class="ci2"><span class="cc2">ECO301</span><span>Microeconomía (Microeconomics)</span></div>
               <div class="ci2"><span class="cc2">ECO302</span><span>Macroeconomía (Macroeconomics)</span></div>
-              <div class="ci2"><span class="cc2">MAT202</span><span>Estadística y Análisis de Datos (Statistics &amp; Data Analysis)</span></div>
+              <div class="ci2"><span class="cc2">MAT202</span><span>Estadística y Análisis de Datos (Statistics & Data Analysis)</span></div>
               <div class="ci2"><span class="cc2">GBS201</span><span>Organización y Métodos (Organization and Methods)</span></div>
               <div class="ci2"><span class="cc2">GBS202</span><span>Derecho Empresarial (Business Law)</span></div>
               <div class="ci2"><span class="cc2">GBS203</span><span>Emprendimiento y Gestión de la Innovación (Innovation Management)</span></div>
@@ -630,39 +1002,67 @@
               <div class="ci2"><span class="cc2">MKT301</span><span>Marketing Estratégico (Strategic Marketing)</span></div>
             </div></div>
           </div>
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización (30 cr.) <span class="ac-a">▼</span></div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Dirección de Empresas (30 cr.) <span class="ac-a">▼</span></div>
             <div class="ac-b"><div class="cl">
-              <div class="ci2"><span class="cc2">BUS302</span><span>Negocios Internacionales (International Business)</span></div>
-              <div class="ci2"><span class="cc2">ECO401</span><span>Entorno Económico Global (Global Economic Environment)</span></div>
-              <div class="ci2"><span class="cc2">FIN401</span><span>Análisis de Inversiones y Mercado de Valores (Investment Analysis)</span></div>
-              <div class="ci2"><span class="cc2">INV401</span><span>Formulación y Evaluación de Proyectos (Project Formulation)</span></div>
-              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica (Strategic Planning)</span></div>
-              <div class="ci2"><span class="cc2">CMN403</span><span>Marketing Estratégico Internacional (International Marketing)</span></div>
-              <div class="ci2"><span class="cc2">HRS401</span><span>Gestión del Talento y Liderazgo (Talent &amp; Leadership)</span></div>
-              <div class="ci2"><span class="cc2">FIN404</span><span>Finanzas para la Dirección de Empresas (Corporate Finance Management)</span></div>
-              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones (Strategic Decisions)</span></div>
-              <div class="ci2"><span class="cc2">MAN404</span><span>Proyecto Final (Final Capstone Project)</span></div>
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">CMN403</span><span>Marketing Estratégico Internacional</span></div>
+              <div class="ci2"><span class="cc2">HRS401</span><span>Gestión del Talento y Liderazgo</span></div>
+              <div class="ci2"><span class="cc2">FIN404</span><span>Finanzas para la Dirección de Empresas</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">MAN404</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Marketing Estratégico y Negocios Internacionales (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">CMN403</span><span>Marketing Estratégico Internacional</span></div>
+              <div class="ci2"><span class="cc2">BUS401</span><span>Estrategias de Expansión Global</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">MAN403</span><span>Logística y Distribución Global</span></div>
+              <div class="ci2"><span class="cc2">MAN404</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Dirección Financiera (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">FIN405</span><span>Dinero y Banca</span></div>
+              <div class="ci2"><span class="cc2">FIN406</span><span>Instituciones y Mercados Financieros</span></div>
+              <div class="ci2"><span class="cc2">FIN404</span><span>Finanzas para la Dirección de Empresas</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">MAN404</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Dirección de Recursos Humanos (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">HRS402</span><span>Comportamiento y Desarrollo Organizacional</span></div>
+              <div class="ci2"><span class="cc2">HRS401</span><span>Gestión del Talento y Liderazgo</span></div>
+              <div class="ci2"><span class="cc2">HRS403</span><span>Relaciones Laborales y Legislación Laboral</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">MAN404</span><span>Proyecto Final</span></div>
             </div></div>
           </div>
         </div>
         <div style="margin-top:18px;padding:14px;background:var(--off);border-radius:4px;font-size:13px;color:var(--tm)"><strong style="color:var(--t)">Perfil del egresado:</strong> Gerente General, Director Estratégico, Consultor Senior, Emprendedor con visión global.</div>
         <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
           <button class="btn sm b-red" onclick="go('apply')">Solicitar admisión</button>
-          <button class="btn sm b-outn" onclick="go('reqinfo')">Solicitar información</button>
-          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure Business Administration">📄 Brochure PDF</a>
+          <button class="btn sm b-outn" onclick="go('reqinfo')">Más información</button>
+          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure Business Administration">📄 Brochure de la especialidad</a>
         </div>
       </div>
     </div>
+
+
     <div class="ppcard" id="mkt">
-      <div class="pptop"><div class="ppbg">School of Marketing &amp; Digital Commerce · Pregrado</div><div class="ppti">B.S. in Marketing</div><div class="ppcc">120 créditos · Licenciatura en Marketing</div></div>
+      <div class="pptop"><div class="ppbg">School of Marketing & Digital Commerce · Pregrado</div><div class="ppti">B.S. in Marketing</div><div class="ppcc">120 créditos · Licenciatura en Marketing</div></div>
       <div class="ppbd">
         <p class="ppds">Forma estrategas de marketing con visión digital e internacional. Aprende a construir marcas, diseñar campañas y gestionar la experiencia del cliente en mercados globales.</p>
         <div class="ppet">4 especializaciones disponibles</div>
         <div class="ppe">
-          <div class="ppe-i">Digital Marketing &amp; E-Commerce</div>
-          <div class="ppe-i">Strategic Marketing &amp; International Business</div>
-          <div class="ppe-i">Human Resources Management</div>
-          <div class="ppe-i">General Management</div>
+          <div class="ppe-i">Dirección de Empresas</div>
+          <div class="ppe-i">Marketing Digital y Comercio Electronico</div>
+          <div class="ppe-i">Marketing Estratégico y Negocios Internacionales</div>
+          <div class="ppe-i">Dirección de Recursos Humanos</div>
         </div>
         <div class="acc">
           <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Educación General (30 cr.) <span class="ac-a">▼</span></div>
@@ -683,16 +1083,16 @@
             <div class="ac-b"><div class="cl">
               <div class="ci2"><span class="cc2">MKT101</span><span>Fundamentos Estratégicos de Marketing (Marketing Fundamentals)</span></div>
               <div class="ci2"><span class="cc2">MKT102</span><span>Comportamiento del Consumidor (Consumer Behavior)</span></div>
-              <div class="ci2"><span class="cc2">MKT201</span><span>Gestión de Producto y Precio (Product &amp; Price Management)</span></div>
-              <div class="ci2"><span class="cc2">MKT202</span><span>Canales de Distribución y Ventas (Sales &amp; Distribution Channels)</span></div>
+              <div class="ci2"><span class="cc2">MKT201</span><span>Gestión de Producto y Precio (Product & Price Management)</span></div>
+              <div class="ci2"><span class="cc2">MKT202</span><span>Canales de Distribución y Ventas (Sales & Distribution Channels)</span></div>
               <div class="ci2"><span class="cc2">MKT203</span><span>Comunicación Integrada de Marketing (Integrated Marketing)</span></div>
               <div class="ci2"><span class="cc2">ACG101</span><span>Fundamentos de Contabilidad (Accounting Fundamentals)</span></div>
-              <div class="ci2"><span class="cc2">MAT202</span><span>Estadística y Análisis de Datos (Statistics &amp; Data Analysis)</span></div>
+              <div class="ci2"><span class="cc2">MAT202</span><span>Estadística y Análisis de Datos (Statistics & Data Analysis)</span></div>
               <div class="ci2"><span class="cc2">ECO301</span><span>Microeconomía (Microeconomics)</span></div>
               <div class="ci2"><span class="cc2">ECO302</span><span>Macroeconomía (Macroeconomics)</span></div>
               <div class="ci2"><span class="cc2">MKT301</span><span>Marketing Estratégico (Strategic Marketing)</span></div>
               <div class="ci2"><span class="cc2">MKT302</span><span>Marketing de Servicios (Services Marketing)</span></div>
-              <div class="ci2"><span class="cc2">MKT303</span><span>Marketing Digital y E-Commerce (Digital Marketing &amp; E-Commerce)</span></div>
+              <div class="ci2"><span class="cc2">MKT303</span><span>Marketing Digital y E-Commerce (Digital Marketing & E-Commerce)</span></div>
               <div class="ci2"><span class="cc2">MKT304</span><span>Gestión de Relaciones con Clientes - CRM (CRM Management)</span></div>
               <div class="ci2"><span class="cc2">CMN301</span><span>Investigación de Mercado (Market Research)</span></div>
               <div class="ci2"><span class="cc2">GBS202</span><span>Derecho Empresarial (Business Law)</span></div>
@@ -703,108 +1103,65 @@
               <div class="ci2"><span class="cc2">FIN301</span><span>Finanzas Empresariales (Business Finance)</span></div>
             </div></div>
           </div>
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización (30 cr.) <span class="ac-a">▼</span></div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Dirección de Empresas (30 cr.) <span class="ac-a">▼</span></div>
             <div class="ac-b"><div class="cl">
-              <div class="ci2"><span class="cc2">MKT401</span><span>Marketing en Redes Sociales (Social Media Marketing)</span></div>
-              <div class="ci2"><span class="cc2">MKT402</span><span>SEO, SEM y Analítica Web (SEO, SEM &amp; Web Analytics)</span></div>
-              <div class="ci2"><span class="cc2">MKT403</span><span>Marketing de Contenidos e Inbound (Content &amp; Inbound Marketing)</span></div>
-              <div class="ci2"><span class="cc2">MKT404</span><span>Publicidad Digital y Meta Ads (Digital Advertising &amp; Meta Ads)</span></div>
-              <div class="ci2"><span class="cc2">MKT405</span><span>Neuromarketing y Psicología del Consumidor (Neuromarketing)</span></div>
-              <div class="ci2"><span class="cc2">MKT406</span><span>Dirección de Marca y Branding Global (Global Brand &amp; Branding)</span></div>
-              <div class="ci2"><span class="cc2">MKT407</span><span>Trade Marketing y Gestión de Retail (Trade Marketing &amp; Retail)</span></div>
-              <div class="ci2"><span class="cc2">MKT408</span><span>Métricas de Marketing y ROI (Marketing Metrics &amp; ROI)</span></div>
-              <div class="ci2"><span class="cc2">MKT409</span><span>Estrategia de Marketing Internacional (International Marketing)</span></div>
-              <div class="ci2"><span class="cc2">MKT410</span><span>Proyecto Final de Marketing (Marketing Capstone Project)</span></div>
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">CMN403</span><span>Marketing Estratégico Internacional</span></div>
+              <div class="ci2"><span class="cc2">HRS401</span><span>Gestión del Talento y Liderazgo</span></div>
+              <div class="ci2"><span class="cc2">FIN404</span><span>Finanzas para la Dirección de Empresas</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">MKT401</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Marketing Digital y Comercio Electronico (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">MKD402</span><span>Gestión de E-Commerce</span></div>
+              <div class="ci2"><span class="cc2">CMN403</span><span>Marketing Estratégico Internacional</span></div>
+              <div class="ci2"><span class="cc2">MKD403</span><span>Dirección de Proyectos Digitales</span></div>
+              <div class="ci2"><span class="cc2">MKD404</span><span>Branding y Redes Sociales</span></div>
+              <div class="ci2"><span class="cc2">MKT401</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Marketing Estratégico y Negocios Internacionales (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">CMN403</span><span>Marketing Estratégico Internacional</span></div>
+              <div class="ci2"><span class="cc2">BUS401</span><span>Estrategias de Expansión Global</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">MAN403</span><span>Logística y Distribución Global</span></div>
+              <div class="ci2"><span class="cc2">MKT401</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Dirección de Recursos Humanos (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">HRS401</span><span>Gestión del Talento y Liderazgo</span></div>
+              <div class="ci2"><span class="cc2">HRS402</span><span>Comportamiento y Desarrollo Organizacional</span></div>
+              <div class="ci2"><span class="cc2">HRS403</span><span>Relaciones Laborales y Legislación Laboral</span></div>
+              <div class="ci2"><span class="cc2">MKT401</span><span>Proyecto Final</span></div>
             </div></div>
           </div>
         </div>
         <div style="margin-top:18px;padding:14px;background:var(--off);border-radius:4px;font-size:13px;color:var(--tm)"><strong style="color:var(--t)">Perfil del egresado:</strong> Director de Marketing, Consultor de Branding, Growth Manager, Especialista SEO/SEM.</div>
         <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
           <button class="btn sm b-red" onclick="go('apply')">Solicitar admisión</button>
-          <button class="btn sm b-outn" onclick="go('reqinfo')">Solicitar información</button>
-          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure Marketing">📄 Brochure PDF</a>
+          <button class="btn sm b-outn" onclick="go('reqinfo')">Más información</button>
+          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure Marketing">📄 Brochure de la especialidad</a>
         </div>
       </div>
     </div>
-    <div class="ppcard" id="it">
-      <div class="pptop"><div class="ppbg">School of Technology · Pregrado</div><div class="ppti">B.S. in Information Technology</div><div class="ppcc">120 créditos · Licenciatura en Tecnología de la Información</div></div>
-      <div class="ppbd">
-        <p class="ppds">Forma profesionales en tecnología con capacidad para diseñar, implementar y gestionar sistemas de información en entornos empresariales globales.</p>
-        <div class="ppet">2 especializaciones disponibles</div>
-        <div class="ppe">
-          <div class="ppe-i">System Engineering</div>
-          <div class="ppe-i">Software System Development</div>
-        </div>
-        <div class="acc">
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Educación General (30 cr.) <span class="ac-a">▼</span></div>
-            <div class="ac-b"><div class="cl">
-              <div class="ci2"><span class="cc2">CGS101</span><span>Tecnologías para la Gestión de Negocios I (Technologies for Business I)</span></div>
-              <div class="ci2"><span class="cc2">CGS102</span><span>Composición en Inglés (Composition in English)</span></div>
-              <div class="ci2"><span class="cc2">CGS103</span><span>Introducción a la Ciencia Ambiental (Environmental Science)</span></div>
-              <div class="ci2"><span class="cc2">CGS104</span><span>Introducción a la Psicología (Introduction to Psychology)</span></div>
-              <div class="ci2"><span class="cc2">CGS105</span><span>Tecnologías para la Gestión de Negocios II (Technologies for Business II)</span></div>
-              <div class="ci2"><span class="cc2">CGS106</span><span>Introducción a la Filosofía (Introduction to Philosophy)</span></div>
-              <div class="ci2"><span class="cc2">MAT101</span><span>Matemáticas Empresariales Aplicadas I (Business Math I)</span></div>
-              <div class="ci2"><span class="cc2">MAT201</span><span>Matemáticas Empresariales Aplicadas II (Business Math II)</span></div>
-              <div class="ci2"><span class="cc2">INV201</span><span>Metodología de la Investigación y Pensamiento Crítico</span></div>
-              <div class="ci2"><span class="cc2">ECO201</span><span>Economía (Economics)</span></div>
-            </div></div>
-          </div>
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Núcleo IT (60 cr.) <span class="ac-a">▼</span></div>
-            <div class="ac-b"><div class="cl">
-              <div class="ci2"><span class="cc2">ITS101</span><span>Introducción a la Tecnología de Información (Introduction to IT)</span></div>
-              <div class="ci2"><span class="cc2">ITS102</span><span>Fundamentos de Programación (Programming Fundamentals)</span></div>
-              <div class="ci2"><span class="cc2">ITS201</span><span>Estructuras de Datos y Algoritmos (Data Structures &amp; Algorithms)</span></div>
-              <div class="ci2"><span class="cc2">ITS202</span><span>Programación Orientada a Objetos (Object-Oriented Programming)</span></div>
-              <div class="ci2"><span class="cc2">ITS203</span><span>Desarrollo Web Front-End (Front-End Web Development)</span></div>
-              <div class="ci2"><span class="cc2">ITS204</span><span>Desarrollo Web Back-End (Back-End Web Development)</span></div>
-              <div class="ci2"><span class="cc2">ITS301</span><span>Sistemas de Bases de Datos (Database Systems)</span></div>
-              <div class="ci2"><span class="cc2">ITS302</span><span>Redes de Computadoras y Conectividad (Computer Networks)</span></div>
-              <div class="ci2"><span class="cc2">ITS303</span><span>Sistemas Operativos Modernos (Modern Operating Systems)</span></div>
-              <div class="ci2"><span class="cc2">ITS304</span><span>Análisis y Diseño de Sistemas (Systems Analysis &amp; Design)</span></div>
-              <div class="ci2"><span class="cc2">ITS305</span><span>Administración de Servidores y Redes (Server &amp; Network Admin)</span></div>
-              <div class="ci2"><span class="cc2">ITS306</span><span>Seguridad de la Información (Information Security)</span></div>
-              <div class="ci2"><span class="cc2">ITS307</span><span>Computación en la Nube - Cloud (Cloud Computing)</span></div>
-              <div class="ci2"><span class="cc2">ITS308</span><span>Interacción Humano-Computador (Human-Computer Interaction)</span></div>
-              <div class="ci2"><span class="cc2">ITS309</span><span>Gestión de Proyectos de TI (IT Project Management)</span></div>
-              <div class="ci2"><span class="cc2">GBS101</span><span>Fundamentos de Administración y Gestiòn (Fundamentals of Management)</span></div>
-              <div class="ci2"><span class="cc2">MAT101</span><span>Matemáticas Empresariales Aplicadas I (Business Math I)</span></div>
-              <div class="ci2"><span class="cc2">MAT202</span><span>Estadística y Análisis de Datos (Statistics &amp; Data Analysis)</span></div>
-              <div class="ci2"><span class="cc2">GBS202</span><span>Derecho Empresarial (Business Law)</span></div>
-              <div class="ci2"><span class="cc2">GBS203</span><span>Emprendimiento y Gestión de la Innovación (Innovation Management)</span></div>
-            </div></div>
-          </div>
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización (30 cr.) <span class="ac-a">▼</span></div>
-            <div class="ac-b"><div class="cl">
-              <div class="ci2"><span class="cc2">ITS401</span><span>Arquitectura de Sistemas Empresariales (Enterprise Systems)</span></div>
-              <div class="ci2"><span class="cc2">ITS402</span><span>Ingeniería de Software Avanzada (Advanced Software Engineering)</span></div>
-              <div class="ci2"><span class="cc2">ITS403</span><span>Fundamentos de Inteligencia Artificial (AI Fundamentals)</span></div>
-              <div class="ci2"><span class="cc2">ITS404</span><span>DevOps e Integración Continua (DevOps &amp; Continuous Integration)</span></div>
-              <div class="ci2"><span class="cc2">ITS405</span><span>Criptografía y Seguridad de Redes (Cryptography &amp; Network Security)</span></div>
-              <div class="ci2"><span class="cc2">ITS406</span><span>Gobierno y Auditoría de TI (IT Governance &amp; Auditing)</span></div>
-              <div class="ci2"><span class="cc2">ITS407</span><span>Desarrollo de Aplicaciones Móviles (Mobile App Development)</span></div>
-              <div class="ci2"><span class="cc2">ITS408</span><span>Análisis de Big Data y BI (Big Data Analysis &amp; BI)</span></div>
-              <div class="ci2"><span class="cc2">ITS409</span><span>Ética en la Era Digital (Digital Ethics &amp; Cyber Law)</span></div>
-              <div class="ci2"><span class="cc2">ITS410</span><span>Proyecto Final de TI (IT Capstone Project)</span></div>
-            </div></div>
-          </div>
-        </div>
-        <div style="margin-top:18px;padding:14px;background:var(--off);border-radius:4px;font-size:13px;color:var(--tm)"><strong style="color:var(--t)">Perfil del egresado:</strong> Administrador de Sistemas, Desarrollador de Software, Director de TI, Analista de Seguridad.</div>
-        <div style="display:flex;gap:9px;margin-top:18px;flex-wrap:wrap">
-          <button class="btn sm b-red" onclick="go('apply')">Solicitar admisión</button>
-          <button class="btn sm b-outn" onclick="go('reqinfo')">Solicitar información</button>
-          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure IT">📄 Brochure PDF</a>
-        </div>
-      </div>
-    </div>
+
+
     <div class="ppcard" id="acct">
-      <div class="pptop"><div class="ppbg">School of Finance &amp; Accounting · Pregrado</div><div class="ppti">B.S. in Accounting &amp; Finance</div><div class="ppcc">120 créditos · Licenciatura en Contabilidad y Finanzas</div></div>
+      <div class="pptop"><div class="ppbg">School of Finance & Accounting · Pregrado</div><div class="ppti">B.S. in Accounting & Finance</div><div class="ppcc">120 créditos · Licenciatura en Contabilidad y Finanzas</div></div>
       <div class="ppbd">
         <p class="ppds">El mundo no necesita más contadores que registran el pasado. Necesita estrategas financieros que usen los números para decidir el futuro y tener el poder de hacerlo realidad.</p>
         <div class="ppet">2 especializaciones disponibles</div>
         <div class="ppe">
-          <div class="ppe-i">Banking &amp; Finance</div>
-          <div class="ppe-i">Finance Management</div>
+          <div class="ppe-i">Banca y Finanzas</div>
+          <div class="ppe-i">Dirección Financiera</div>
         </div>
         <div class="acc">
           <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Educación General (30 cr.) <span class="ac-a">▼</span></div>
@@ -821,7 +1178,7 @@
               <div class="ci2"><span class="cc2">ECO201</span><span>Economía (Economics)</span></div>
             </div></div>
           </div>
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Núcleo Accounting &amp; Finance (60 cr.) <span class="ac-a">▼</span></div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Núcleo Accounting & Finance (60 cr.) <span class="ac-a">▼</span></div>
             <div class="ac-b"><div class="cl">
               <div class="ci2"><span class="cc2">ACG101</span><span>Fundamentos de Contabilidad (Accounting Fundamentals)</span></div>
               <div class="ci2"><span class="cc2">ACG102</span><span>Contabilidad Financiera I (Financial Accounting I)</span></div>
@@ -842,32 +1199,140 @@
               <div class="ci2"><span class="cc2">ECO302</span><span>Macroeconomía (Macroeconomics)</span></div>
               <div class="ci2"><span class="cc2">GBS202</span><span>Derecho Empresarial (Business Law)</span></div>
               <div class="ci2"><span class="cc2">GBS203</span><span>Emprendimiento y Gestión de la Innovación (Innovation Management)</span></div>
-              <div class="ci2"><span class="cc2">MAT202</span><span>Estadística y Análisis de Datos (Statistics &amp; Data Analysis)</span></div>
+              <div class="ci2"><span class="cc2">MAT202</span><span>Estadística y Análisis de Datos (Statistics & Data Analysis)</span></div>
             </div></div>
           </div>
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización (30 cr.) <span class="ac-a">▼</span></div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Banca y Finanzas (30 cr.) <span class="ac-a">▼</span></div>
             <div class="ac-b"><div class="cl">
-              <div class="ci2"><span class="cc2">ACG401</span><span>Auditoría Avanzada (Advanced Auditing)</span></div>
-              <div class="ci2"><span class="cc2">ACG402</span><span>Contabilidad y Finanzas Internacionales (International Finance)</span></div>
-              <div class="ci2"><span class="cc2">ACG403</span><span>Ética y Responsabilidad Contable (Accounting Ethics)</span></div>
-              <div class="ci2"><span class="cc2">ACG404</span><span>Auditoría Interna y Control de Gestión (Internal Auditing)</span></div>
-              <div class="ci2"><span class="cc2">ACG405</span><span>Contabilidad Forense y Prevención de Fraudes (Forensic Accounting)</span></div>
-              <div class="ci2"><span class="cc2">FIN401</span><span>Análisis de Inversiones y Mercado de Valores (Investment Analysis)</span></div>
-              <div class="ci2"><span class="cc2">FIN402</span><span>Banca de Inversión y Valoración (Investment Banking &amp; Valuation)</span></div>
-              <div class="ci2"><span class="cc2">FIN403</span><span>Gestión de Riesgos Financieros (Financial Risk Management)</span></div>
-              <div class="ci2"><span class="cc2">FIN404</span><span>Modelamiento Financiero Aplicado (Applied Financial Modeling)</span></div>
-              <div class="ci2"><span class="cc2">FIN410</span><span>Proyecto Final de Contabilidad y Finanzas (Capstone Project)</span></div>
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">FIN407</span><span>Analisis de Inversiones y Carteras</span></div>
+              <div class="ci2"><span class="cc2">FIN408</span><span>Gestión de Riesgos Financieros</span></div>
+              <div class="ci2"><span class="cc2">FIN405</span><span>Dinero y Banca</span></div>
+              <div class="ci2"><span class="cc2">FIN409</span><span>Administración de la Tesorería</span></div>
+              <div class="ci2"><span class="cc2">FIN410</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Dirección Financiera (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">FIN405</span><span>Dinero y Banca</span></div>
+              <div class="ci2"><span class="cc2">FIN406</span><span>Instituciones y Mercados Financieros</span></div>
+              <div class="ci2"><span class="cc2">FIN404</span><span>Finanzas para la Dirección de Empresas</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">FIN410</span><span>Proyecto Final</span></div>
             </div></div>
           </div>
         </div>
         <div style="margin-top:18px;padding:14px;background:var(--off);border-radius:4px;font-size:13px;color:var(--tm)"><strong style="color:var(--t)">Perfil del egresado:</strong> Director Financiero (CFO), Contralor Corporativo, Auditor Senior, Gestor de Portafolio.</div>
-        <div style="display:flex;gap:9px;margin-top:18px;flex-wrap:wrap">
+        <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
           <button class="btn sm b-red" onclick="go('apply')">Solicitar admisión</button>
-          <button class="btn sm b-outn" onclick="go('reqinfo')">Solicitar información</button>
-          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure Accounting &amp; Finance">📄 Brochure PDF</a>
+          <button class="btn sm b-outn" onclick="go('reqinfo')">Más información</button>
+          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure Accounting & Finance">📄 Brochure de la especialidad</a>
         </div>
       </div>
     </div>
+
+
+    <div class="ppcard" id="it">
+      <div class="pptop"><div class="ppbg">School of Technology · Pregrado</div><div class="ppti">B.S. in Information Technology</div><div class="ppcc">120 créditos · Licenciatura en Tecnología de la Información</div></div>
+      <div class="ppbd">
+        <p class="ppds">Forma profesionales en tecnología con capacidad para diseñar, implementar y gestionar sistemas de información en entornos empresariales globales.</p>
+        <div class="ppet">4 especializaciones disponibles</div>
+        <div class="ppe">
+          <div class="ppe-i">Ingeniería de Sistemas Informáticos</div>
+          <div class="ppe-i">Desarrollo de Sistemas de Software</div>
+          <div class="ppe-i">Dirección Financiera</div>
+          <div class="ppe-i">Dirección de Recursos Humanos</div>
+        </div>
+        <div class="acc">
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Educación General (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">CGS101</span><span>Tecnologías para la Gestión de Negocios I (Technologies for Business I)</span></div>
+              <div class="ci2"><span class="cc2">CGS102</span><span>Composición en Inglés (Composition in English)</span></div>
+              <div class="ci2"><span class="cc2">CGS103</span><span>Introducción a la Ciencia Ambiental (Environmental Science)</span></div>
+              <div class="ci2"><span class="cc2">CGS104</span><span>Introducción a la Psicología (Introduction to Psychology)</span></div>
+              <div class="ci2"><span class="cc2">CGS105</span><span>Tecnologías para la Gestión de Negocios II (Technologies for Business II)</span></div>
+              <div class="ci2"><span class="cc2">CGS106</span><span>Introducción a la Filosofía (Introduction to Philosophy)</span></div>
+              <div class="ci2"><span class="cc2">MAT101</span><span>Matemáticas Empresariales Aplicadas I (Business Math I)</span></div>
+              <div class="ci2"><span class="cc2">MAT201</span><span>Matemáticas Empresariales Aplicadas II (Business Math II)</span></div>
+              <div class="ci2"><span class="cc2">INV201</span><span>Metodología de la Investigación y Pensamiento Crítico</span></div>
+              <div class="ci2"><span class="cc2">ECO201</span><span>Economía (Economics)</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Núcleo Information Technology (60 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">ITS101</span><span>Introducción a la Tecnología de Información (Introduction to IT)</span></div>
+              <div class="ci2"><span class="cc2">ITS102</span><span>Fundamentos de Programación (Programming Fundamentals)</span></div>
+              <div class="ci2"><span class="cc2">ITS201</span><span>Estructuras de Datos y Algoritmos (Data Structures & Algorithms)</span></div>
+              <div class="ci2"><span class="cc2">ITS202</span><span>Programación Orientada a Objetos (Object-Oriented Programming)</span></div>
+              <div class="ci2"><span class="cc2">ITS203</span><span>Desarrollo Web Front-End (Front-End Web Development)</span></div>
+              <div class="ci2"><span class="cc2">ITS204</span><span>Desarrollo Web Back-End (Back-End Web Development)</span></div>
+              <div class="ci2"><span class="cc2">ITS301</span><span>Sistemas de Bases de Datos (Database Systems)</span></div>
+              <div class="ci2"><span class="cc2">ITS302</span><span>Redes de Computadoras y Conectividad (Computer Networks)</span></div>
+              <div class="ci2"><span class="cc2">ITS303</span><span>Sistemas Operativos Modernos (Modern Operating Systems)</span></div>
+              <div class="ci2"><span class="cc2">ITS304</span><span>Análisis y Diseño de Sistemas (Systems Analysis & Design)</span></div>
+              <div class="ci2"><span class="cc2">ITS305</span><span>Administración de Servidores y Redes (Server & Network Admin)</span></div>
+              <div class="ci2"><span class="cc2">ITS306</span><span>Seguridad de la Información (Information Security)</span></div>
+              <div class="ci2"><span class="cc2">ITS307</span><span>Computación en la Nube - Cloud (Cloud Computing)</span></div>
+              <div class="ci2"><span class="cc2">ITS308</span><span>Interacción Humano-Computador (Human-Computer Interaction)</span></div>
+              <div class="ci2"><span class="cc2">ITS309</span><span>Gestión de Proyectos de TI (IT Project Management)</span></div>
+              <div class="ci2"><span class="cc2">GBS101</span><span>Fundamentos de Administración y Gestión (Fundamentals of Management)</span></div>
+              <div class="ci2"><span class="cc2">MAT101</span><span>Matemáticas Empresariales Aplicadas I (Business Math I)</span></div>
+              <div class="ci2"><span class="cc2">MAT202</span><span>Estadística y Análisis de Datos (Statistics & Data Analysis)</span></div>
+              <div class="ci2"><span class="cc2">GBS202</span><span>Derecho Empresarial (Business Law)</span></div>
+              <div class="ci2"><span class="cc2">GBS203</span><span>Emprendimiento y Gestión de la Innovación (Innovation Management)</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Ingeniería de Sistemas Informáticos (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">ITE403</span><span>Metodologías Eficaces para Pruebas de Software</span></div>
+              <div class="ci2"><span class="cc2">ITD401</span><span>Desarrollo de Software</span></div>
+              <div class="ci2"><span class="cc2">ITM402</span><span>Auditoria de Sistemas Informáticos</span></div>
+              <div class="ci2"><span class="cc2">ITN401</span><span>Administración de Redes de Computadoras</span></div>
+              <div class="ci2"><span class="cc2">ITE402</span><span>Arquitectura de Sistemas</span></div>
+              <div class="ci2"><span class="cc2">ITE404</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Desarrollo de Sistemas de Software (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">ITD402</span><span>Diseño de Interfaces de Usuario</span></div>
+              <div class="ci2"><span class="cc2">ITD403</span><span>Programación Web Avanzada y  Desarrollo de App.</span></div>
+              <div class="ci2"><span class="cc2">ITD404</span><span>Base de Datos para Aplicaciones y Web</span></div>
+              <div class="ci2"><span class="cc2">ITM402</span><span>Auditoria de Sistemas Informáticos</span></div>
+              <div class="ci2"><span class="cc2">ITE403</span><span>Metodologías Eficaces para Pruebas de Software</span></div>
+              <div class="ci2"><span class="cc2">ITE404</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Dirección Financiera (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">FIN405</span><span>Dinero y Banca</span></div>
+              <div class="ci2"><span class="cc2">FIN406</span><span>Instituciones y Mercados Financieros</span></div>
+              <div class="ci2"><span class="cc2">FIN404</span><span>Finanzas para la Dirección de Empresas</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">MAN404</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Dirección de Recursos Humanos (30 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN401</span><span>Planificación y Gestión Estratégica</span></div>
+              <div class="ci2"><span class="cc2">HRS402</span><span>Comportamiento y Desarrollo Organizacional</span></div>
+              <div class="ci2"><span class="cc2">HRS401</span><span>Gestión del Talento y Liderazgo</span></div>
+              <div class="ci2"><span class="cc2">HRS403</span><span>Relaciones Laborales y Legislación Laboral</span></div>
+              <div class="ci2"><span class="cc2">MAN402</span><span>Gerencia Estratégica para la Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">MAN404</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+        </div>
+        <div style="margin-top:18px;padding:14px;background:var(--off);border-radius:4px;font-size:13px;color:var(--tm)"><strong style="color:var(--t)">Perfil del egresado:</strong> Administrador de Sistemas, Desarrollador de Software, Director de TI, Analista de Seguridad.</div>
+        <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
+          <button class="btn sm b-red" onclick="go('apply')">Solicitar admisión</button>
+          <button class="btn sm b-outn" onclick="go('reqinfo')">Más información</button>
+          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure IT">📄 Brochure de la especialidad</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div></section>
 <div class="ctaf"><div><h2 class="cf-h">Eleva tu potencial.<br>Domina los negocios.</h2><p class="cf-s">Inspira el cambio. · 120 créditos · 100% online en español.</p></div><button class="btn lg b-wht" onclick="go('adm')">Solicitar admisión →</button></div>
@@ -904,9 +1369,9 @@
 
   <!-- datos clave -->
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px">
-    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">36</div><div style="font-size:13px;color:var(--tm);margin-top:5px">créditos académicos</div></div>
-    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">8</div><div style="font-size:13px;color:var(--tm);margin-top:5px">programas de posgrado</div></div>
-    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1">3</div><div style="font-size:13px;color:var(--tm);margin-top:5px">escuelas de posgrado</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1"><span class="counter-val" data-target="36" data-duration="2500">0</span></div><div style="font-size:13px;color:var(--tm);margin-top:5px">créditos académicos</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1"><span class="counter-val" data-target="8" data-duration="2000">0</span></div><div style="font-size:13px;color:var(--tm);margin-top:5px">programas de posgrado</div></div>
+    <div style="background:var(--navy-xlt);border:1px solid var(--navy-lt);border-radius:var(--r);padding:22px;text-align:center"><div style="font-family:var(--H);font-size:46px;font-weight:900;color:var(--navy);line-height:1"><span class="counter-val" data-target="3" data-duration="2000">0</span></div><div style="font-size:13px;color:var(--tm);margin-top:5px">escuelas de posgrado</div></div>
   </div>
   <!-- Núcleo común -->
   <div style="background:var(--navy);border-radius:var(--r);padding:30px;margin-bottom:48px">
@@ -923,116 +1388,115 @@
     </div>
   </div>
   <div class="ppg">
-    <div class="ppcard po" id="mba">
+                    <div class="ppcard po" id="mba">
       <div class="pptop"><div class="ppbg">MBA Programs · Posgrado</div><div class="ppti">Master of Business Administration</div><div class="ppcc">36 créditos · Maestría en Administración de Empresas</div></div>
       <div class="ppbd">
         <p class="ppds">El programa más demandado del mundo para directivos y emprendedores. Visión estratégica 360° del liderazgo ejecutivo: innovación, finanzas, marketing y gestión de personas.</p>
-        <div class="ppet">4 especializaciones</div>
+        <div class="ppet">3 especializaciones disponibles</div>
         <div class="ppe">
-          <div class="ppe-i">General Management &amp; Innovation</div>
           <div class="ppe-i">Digital Marketing Management</div>
           <div class="ppe-i">Human Resources Management</div>
           <div class="ppe-i">Financial Management</div>
         </div>
         <div class="acc">
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Estructura y Malla (36 cr.) <span class="ac-a">▼</span></div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Digital Marketing Management (12 cr.) <span class="ac-a">▼</span></div>
             <div class="ac-b"><div class="cl">
-              <div style="font-weight:700;color:var(--navy);font-size:12px;margin-bottom:6px;text-transform:uppercase">Núcleo Común (24 cr.):</div>
-              <div class="ci2"><span class="cc2">MAN501</span><span>Strategic Fundamentals for Management</span></div>
-              <div class="ci2"><span class="cc2">HRS501</span><span>Talent Management</span></div>
-              <div class="ci2"><span class="cc2">MAN502</span><span>Management and Executive Leadership</span></div>
-              <div class="ci2"><span class="cc2">MAN503</span><span>Strategic Management and Decision Making</span></div>
-              <div class="ci2"><span class="cc2">FIN501</span><span>Corporate Finance</span></div>
-              <div class="ci2"><span class="cc2">MKT501</span><span>Strategic Marketing Management</span></div>
-              <div class="ci2"><span class="cc2">MKD501</span><span>Strategic Management of Digital Marketing</span></div>
-              <div class="ci2"><span class="cc2">MAN601</span><span>Strategic Planning and Management</span></div>
-              <div style="font-weight:700;color:var(--navy);font-size:12px;margin:10px 0 6px;text-transform:uppercase">Cursos Especialización MBA (12 cr.):</div>
-              <div class="ci2"><span class="cc2">MBA501</span><span>Innovation and Corporate Entrepreneurship</span></div>
-              <div class="ci2"><span class="cc2">MBA502</span><span>Global Operations and Supply Chain</span></div>
-              <div class="ci2"><span class="cc2">MBA503</span><span>Strategic Leadership and Corporate Governance</span></div>
-              <div class="ci2"><span class="cc2">MBA602</span><span>Proyecto Final de Maestría (MBA Capstone Project)</span></div>
+              <div class="ci2"><span class="cc2">MAN601</span><span>Planificación y Dirección Estratégica</span></div>
+              <div class="ci2"><span class="cc2">MKD601</span><span>Gestión de Redes Sociales y Marketing de Contenidos</span></div>
+              <div class="ci2"><span class="cc2">MKD602</span><span>Analítica y Métricas de Marketing Digital</span></div>
+              <div class="ci2"><span class="cc2">MKD603</span><span>Gestión de E-Commerce y Marketing Digital</span></div>
+              <div class="ci2"><span class="cc2">MAN604</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Human Resources Management (12 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN601</span><span>Planificación y Dirección Estratégica</span></div>
+              <div class="ci2"><span class="cc2">HRS601</span><span>Compensación y Beneficios</span></div>
+              <div class="ci2"><span class="cc2">HRS602</span><span>Relaciones Laborales y Legislación Laboral</span></div>
+              <div class="ci2"><span class="cc2">HRS603</span><span>Desarrollo de Liderazgo y Gestión del Cambio</span></div>
+              <div class="ci2"><span class="cc2">MAN604</span><span>Proyecto Final</span></div>
+            </div></div>
+          </div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Financial Management (12 cr.) <span class="ac-a">▼</span></div>
+            <div class="ac-b"><div class="cl">
+              <div class="ci2"><span class="cc2">MAN601</span><span>Planificación y Dirección Estratégica</span></div>
+              <div class="ci2"><span class="cc2">FIN5601</span><span>Ingeniería Financiera</span></div>
+              <div class="ci2"><span class="cc2">FIN602</span><span>Análisis e interpretación de estados financieros</span></div>
+              <div class="ci2"><span class="cc2">FIN603</span><span>Estrategia Financiera y Toma de Decisiones</span></div>
+              <div class="ci2"><span class="cc2">MAN604</span><span>Proyecto Final</span></div>
             </div></div>
           </div>
         </div>
+        <div style="margin-top:18px;padding:14px;background:var(--off);border-radius:4px;font-size:13px;color:var(--tm)"><strong style="color:var(--t)">Perfil del egresado:</strong> Director Ejecutivo (CEO), Gerente de Operaciones, Director de Estrategia, Consultor de Negocios.</div>
         <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
           <button class="btn sm b-red" onclick="go('apply')">Solicitar admisión</button>
-          <button class="btn sm b-outn" onclick="go('reqinfo')">Solicitar información</button>
-          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download>📄 Brochure PDF</a>
+          <button class="btn sm b-outn" onclick="go('reqinfo')">Más información</button>
+          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure MBA">📄 Brochure de la maestría</a>
         </div>
       </div>
     </div>
+
+
     <div class="ppcard po" id="mktm">
       <div class="pptop"><div class="ppbg">School of Marketing · Posgrado</div><div class="ppti">Master of Marketing</div><div class="ppcc">36 créditos · Maestría en Marketing</div></div>
       <div class="ppbd">
         <p class="ppds">Forma líderes de marketing con visión estratégica y digital. Para quienes quieren dirigir equipos comerciales y construir marcas con proyección internacional.</p>
-        <div class="ppet">2 especializaciones</div>
+        <div class="ppet">1 especialización disponible</div>
         <div class="ppe">
-          <div class="ppe-i">Strategic Marketing Management</div>
           <div class="ppe-i">Digital Marketing Management</div>
         </div>
         <div class="acc">
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Estructura y Malla (36 cr.) <span class="ac-a">▼</span></div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: Digital Marketing Management (12 cr.) <span class="ac-a">▼</span></div>
             <div class="ac-b"><div class="cl">
-              <div style="font-weight:700;color:var(--navy);font-size:12px;margin-bottom:6px;text-transform:uppercase">Núcleo Común (24 cr.):</div>
-              <div class="ci2"><span class="cc2">MAN501</span><span>Strategic Fundamentals for Management</span></div>
-              <div class="ci2"><span class="cc2">HRS501</span><span>Talent Management</span></div>
-              <div class="ci2"><span class="cc2">MAN502</span><span>Management and Executive Leadership</span></div>
-              <div class="ci2"><span class="cc2">MAN503</span><span>Strategic Management and Decision Making</span></div>
-              <div class="ci2"><span class="cc2">FIN501</span><span>Corporate Finance</span></div>
-              <div class="ci2"><span class="cc2">MKT501</span><span>Strategic Marketing Management</span></div>
-              <div class="ci2"><span class="cc2">MKD501</span><span>Strategic Management of Digital Marketing</span></div>
-              <div class="ci2"><span class="cc2">MAN601</span><span>Strategic Planning and Management</span></div>
-              <div style="font-weight:700;color:var(--navy);font-size:12px;margin:10px 0 6px;text-transform:uppercase">Cursos Especialización Marketing (12 cr.):</div>
-              <div class="ci2"><span class="cc2">MKT502</span><span>Consumer Behavior and Neuromarketing</span></div>
-              <div class="ci2"><span class="cc2">MKT503</span><span>Global Brand Strategy and Positioning</span></div>
-              <div class="ci2"><span class="cc2">MKT504</span><span>Marketing Metrics and ROI Analysis</span></div>
-              <div class="ci2"><span class="cc2">MKT602</span><span>Proyecto Final de Marketing (Marketing Capstone)</span></div>
+              <div class="ci2"><span class="cc2">MAN601</span><span>Planificación y Dirección Estratégica</span></div>
+              <div class="ci2"><span class="cc2">MKD601</span><span>Gestión de Redes Sociales y Marketing de Contenidos</span></div>
+              <div class="ci2"><span class="cc2">MKD602</span><span>Analítica y Métricas de Marketing Digital</span></div>
+              <div class="ci2"><span class="cc2">MKD603</span><span>Gestión de E-Commerce y Marketing Digital</span></div>
+              <div class="ci2"><span class="cc2">MKT603</span><span>Proyecto Final</span></div>
             </div></div>
           </div>
         </div>
+        <div style="margin-top:18px;padding:14px;background:var(--off);border-radius:4px;font-size:13px;color:var(--tm)"><strong style="color:var(--t)">Perfil del egresado:</strong> Director de Marketing (CMO), Brand Manager, Growth Director, Consultor de Marketing Digital.</div>
         <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
           <button class="btn sm b-red" onclick="go('apply')">Solicitar admisión</button>
-          <button class="btn sm b-outn" onclick="go('reqinfo')">Solicitar información</button>
-          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download>📄 Brochure PDF</a>
+          <button class="btn sm b-outn" onclick="go('reqinfo')">Más información</button>
+          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure Marketing">📄 Brochure de la maestría</a>
         </div>
       </div>
     </div>
+
+
     <div class="ppcard po" id="edm">
       <div class="pptop"><div class="ppbg">School of Education · Posgrado</div><div class="ppti">Master of Higher Education</div><div class="ppcc">36 créditos · Maestría en Educación Superior</div></div>
       <div class="ppbd">
         <p class="ppds">Para quienes trabajan o quieren trabajar en instituciones educativas y plataformas de aprendizaje online. Combina pedagogía digital con gestión institucional.</p>
-        <div class="ppet">2 especializaciones</div>
+        <div class="ppet">1 especialización disponible</div>
         <div class="ppe">
-          <div class="ppe-i">Online Education &amp; E-Learning Technologies</div>
-          <div class="ppe-i">General Management &amp; Innovation</div>
+          <div class="ppe-i">General Management & Innovation</div>
         </div>
         <div class="acc">
-          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Estructura y Malla (36 cr.) <span class="ac-a">▼</span></div>
+          <div class="ac-i"><div class="ac-h" onclick="accToggle(this)">Especialización: General Management & Innovation (12 cr.) <span class="ac-a">▼</span></div>
             <div class="ac-b"><div class="cl">
-              <div style="font-weight:700;color:var(--navy);font-size:12px;margin-bottom:6px;text-transform:uppercase">Núcleo Común (24 cr.):</div>
-              <div class="ci2"><span class="cc2">MAN501</span><span>Strategic Fundamentals for Management</span></div>
-              <div class="ci2"><span class="cc2">HRS501</span><span>Talent Management</span></div>
-              <div class="ci2"><span class="cc2">MAN502</span><span>Management and Executive Leadership</span></div>
-              <div class="ci2"><span class="cc2">MAN503</span><span>Strategic Management and Decision Making</span></div>
-              <div class="ci2"><span class="cc2">FIN501</span><span>Corporate Finance</span></div>
-              <div class="ci2"><span class="cc2">MKT501</span><span>Strategic Marketing Management</span></div>
-              <div class="ci2"><span class="cc2">MKD501</span><span>Strategic Management of Digital Marketing</span></div>
-              <div class="ci2"><span class="cc2">MAN601</span><span>Strategic Planning and Management</span></div>
-              <div style="font-weight:700;color:var(--navy);font-size:12px;margin:10px 0 6px;text-transform:uppercase">Cursos Especialización Educación (12 cr.):</div>
-              <div class="ci2"><span class="cc2">EDU501</span><span>Modern Pedagogical Theories</span></div>
-              <div class="ci2"><span class="cc2">EDU502</span><span>Design of E-Learning Environments</span></div>
-              <div class="ci2"><span class="cc2">EDU503</span><span>Educational Institutional Management</span></div>
-              <div class="ci2"><span class="cc2">EDU602</span><span>Proyecto Final de Educación (Education Capstone)</span></div>
+              <div class="ci2"><span class="cc2">MAN601</span><span>Planificación y Dirección Estratégica</span></div>
+              <div class="ci2"><span class="cc2">MAN602</span><span>Estrategias de Internacionalización y Negocios Internacionales</span></div>
+              <div class="ci2"><span class="cc2">ECO601</span><span>Economía Empresarial</span></div>
+              <div class="ci2"><span class="cc2">MAN603</span><span>Emprendimiento y Gestión de la Innovación</span></div>
+              <div class="ci2"><span class="cc2">EDU605</span><span>Proyecto Final</span></div>
             </div></div>
           </div>
         </div>
+        <div style="margin-top:18px;padding:14px;background:var(--off);border-radius:4px;font-size:13px;color:var(--tm)"><strong style="color:var(--t)">Perfil del egresado:</strong> Director / Administrador Educativo, Diseñador Instruccional, Coordinador Académico, Consultor en Innovación Educativa.</div>
         <div style="display:flex;gap:9px;margin-top:14px;flex-wrap:wrap">
           <button class="btn sm b-red" onclick="go('apply')">Solicitar admisión</button>
-          <button class="btn sm b-outn" onclick="go('reqinfo')">Solicitar información</button>
-          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download>📄 Brochure PDF</a>
+          <button class="btn sm b-outn" onclick="go('reqinfo')">Más información</button>
+          <a class="dl-btn" href="BROCHURE FBTU MODELO Ultimo.pdf" download title="Descargar Brochure Education">📄 Brochure de la maestría</a>
         </div>
       </div>
     </div>
+
+
+
+
   </div>
 </div></section>
 <div class="ctaf"><div><h2 class="cf-h">Next level.<br>No excuses.</h2><p class="cf-s">Lead with knowledge. Execute with confidence.</p></div><button class="btn lg b-wht" onclick="go('adm')">Solicitar admisión →</button></div>
@@ -1234,7 +1698,7 @@
     <h2 class="ttl">Aquinas <em>Online Library</em></h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:24px">
       <div style="background:var(--navy);border-radius:var(--r);padding:30px">
-        <div style="font-family:var(--H);font-size:46px;font-weight:900;color:#fff;line-height:1;margin-bottom:7px">+200</div>
+        <div style="font-family:var(--H);font-size:46px;font-weight:900;color:#fff;line-height:1;margin-bottom:7px">+<span class="counter-val" data-target="200" data-duration="2800">0</span></div>
         <div style="font-family:var(--H);font-size:15px;font-weight:800;text-transform:uppercase;color:var(--red);margin-bottom:11px">fuentes académicas</div>
         <div style="font-size:14px;color:rgba(255,255,255,.62);line-height:1.65">Bases de datos · Journals académicos internacionales · eBooks · Artículos científicos. Acceso con credenciales institucionales desde Canvas. Disponible 24/7.</div>
       </div>
@@ -1293,9 +1757,9 @@
       </div>
       <div class="lbl" style="margin-top:30px">Honores académicos</div>
       <div class="hons">
-        <div class="hon"><div class="hon-t">Cum Laude</div><div class="hon-g">3.50</div><div class="hon-r">GPA 3.50 – 3.69</div></div>
-        <div class="hon"><div class="hon-t">Magna Cum Laude</div><div class="hon-g">3.70</div><div class="hon-r">GPA 3.70 – 3.89</div></div>
-        <div class="hon" style="background:var(--red)"><div class="hon-t" style="color:#fff">Summa Cum Laude</div><div class="hon-g">3.90</div><div class="hon-r">GPA 3.90 o superior</div></div>
+        <div class="hon"><div class="hon-t">Cum Laude</div><div class="hon-g"><span class="counter-val" data-target="3.50" data-duration="2500">0.00</span></div><div class="hon-r">GPA 3.50 – 3.69</div></div>
+        <div class="hon"><div class="hon-t">Magna Cum Laude</div><div class="hon-g"><span class="counter-val" data-target="3.70" data-duration="2500">0.00</span></div><div class="hon-r">GPA 3.70 – 3.89</div></div>
+        <div class="hon" style="background:var(--red)"><div class="hon-t" style="color:#fff">Summa Cum Laude</div><div class="hon-g"><span class="counter-val" data-target="3.90" data-duration="2500">0.00</span></div><div class="hon-r">GPA 3.90 o superior</div></div>
       </div>
     </div>
   </div>
@@ -1491,10 +1955,10 @@
       </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:#fff;line-height:1">8</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">semanas por período</div></div>
-      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:var(--red);line-height:1">72h</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">máx. feedback docente</div></div>
-      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:#fff;line-height:1">30:1</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">ratio máx. estudiantes/docente</div></div>
-      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:var(--red);line-height:1">24/7</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">acceso a recursos Canvas</div></div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:#fff;line-height:1"><span class="counter-val" data-target="8" data-duration="2000">0</span></div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">semanas por período</div></div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:var(--red);line-height:1"><span class="counter-val" data-target="72" data-duration="2800">0</span>h</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">máx. feedback docente</div></div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:#fff;line-height:1"><span class="counter-val" data-target="30" data-duration="2500">0</span>:1</div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">ratio máx. estudiantes/docente</div></div>
+      <div style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:20px;text-align:center"><div style="font-family:var(--H);font-size:36px;font-weight:900;color:var(--red);line-height:1"><span class="counter-val" data-target="24" data-duration="2200">0</span>/<span class="counter-val" data-target="7" data-duration="2000">0</span></div><div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:5px">acceso a recursos Canvas</div></div>
     </div>
   </div>
 
@@ -1751,6 +2215,16 @@
           <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Head of Digital</div>
           <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Marketing Strategist</div>
           <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Global Brand Manager</div>
+        </div></div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden">
+        <div style="background:var(--red);padding:16px 20px"><div style="font-family:var(--H);font-size:13px;font-weight:800;text-transform:uppercase;color:#fff">Master of Higher Education</div><div style="font-size:12px;color:rgba(255,255,255,.55);margin-top:3px">Posgrado — 36 créditos</div></div>
+        <div style="padding:18px 20px"><div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--t)">
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Director / Administrador Educativo</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Diseñador Instruccional / E-Learning Specialist</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Coordinador de Tecnología Educativa</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Director de Admisiones y Registro</div>
+          <div style="display:flex;gap:8px"><span style="color:var(--red);flex-shrink:0">▸</span>Consultor en Innovación Curricular</div>
         </div></div>
       </div>
     </div>
